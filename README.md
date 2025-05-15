@@ -42,6 +42,8 @@ cd api
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+set FLASK_APP=app.py
+
 ```
 
 4. Run the application:
@@ -50,7 +52,7 @@ pip install -r requirements.txt
 npm run dev
 
 # Terminal 2 - Backend
-npm run start-api
+flask run --no-debugger  
 ```
 
 ## Usage
